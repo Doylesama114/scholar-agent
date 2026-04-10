@@ -17,6 +17,8 @@ concurrency:
 jobs:
   build:
     runs-on: ubuntu-latest
+    env:
+      VITE_API_BASE_URL: https://hildred-sufferable-karly.ngrok-free.dev
     defaults:
       run:
         working-directory: frontend
